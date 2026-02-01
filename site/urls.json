@@ -1,5 +1,6 @@
 {
   "posts": [
+    "/como-aprender-um-novo-idioma.html",
     "/bem-vindo.html",
     "/como-criar-blog-marmite.html"
   ],
@@ -8,12 +9,13 @@
     "/pages.html"
   ],
   "tags": [
+    "/tag-tutorial.html",
     "/tag-blog.html",
     "/tag-pessoal.html",
-    "/tag-rust.html",
-    "/tag-tutorial.html",
+    "/tag-ingles.html",
     "/tag-marmite.html",
     "/tag-inicio.html",
+    "/tag-rust.html",
     "/tags.html"
   ],
   "authors": [
@@ -30,32 +32,35 @@
   ],
   "feeds": [
     "/index.rss",
+    "/tag-tutorial.rss",
     "/tag-blog.rss",
     "/tag-pessoal.rss",
-    "/tag-rust.rss",
-    "/tag-tutorial.rss",
+    "/tag-ingles.rss",
     "/tag-marmite.rss",
     "/tag-inicio.rss",
+    "/tag-rust.rss",
     "/author-fabricio.rss",
     "/archive-2026.rss",
     "/index.json",
+    "/tag-tutorial.json",
     "/tag-blog.json",
     "/tag-pessoal.json",
-    "/tag-rust.json",
-    "/tag-tutorial.json",
+    "/tag-ingles.json",
     "/tag-marmite.json",
     "/tag-inicio.json",
+    "/tag-rust.json",
     "/author-fabricio.json",
     "/archive-2026.json"
   ],
   "pagination": [
     "/pages-1.html",
+    "/tag-tutorial-1.html",
     "/tag-blog-1.html",
     "/tag-pessoal-1.html",
-    "/tag-rust-1.html",
-    "/tag-tutorial-1.html",
+    "/tag-ingles-1.html",
     "/tag-marmite-1.html",
     "/tag-inicio-1.html",
+    "/tag-rust-1.html",
     "/author-fabricio-1.html",
     "/archive-2026-1.html"
   ],
@@ -64,18 +69,18 @@
     "/index.html"
   ],
   "summary": {
-    "posts": 2,
+    "posts": 3,
     "pages": 2,
-    "tags": 7,
+    "tags": 8,
     "authors": 2,
     "series": 0,
     "streams": 1,
     "archives": 2,
-    "feeds": 18,
-    "pagination": 9,
+    "feeds": 20,
+    "pagination": 10,
     "file_mappings": 0,
     "misc": 1,
-    "total": 44,
+    "total": 49,
     "meta": {
       "url": "",
       "absolute_urls": false
