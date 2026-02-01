@@ -2,9 +2,9 @@
   "marmite_version": "0.2.7",
   "posts": 2,
   "pages": 1,
-  "generated_at": "2026-02-01 00:37:12.430822807 -03:00",
-  "timestamp": 1769917032,
-  "elapsed_time": 0.041400743,
+  "generated_at": "2026-02-01 11:51:51.964481940 -03:00",
+  "timestamp": 1769957511,
+  "elapsed_time": 0.046021864,
   "config": {
     "name": "Meus 10 Centavos",
     "tagline": "Meus 10 centavos de contribuição para uma discussão que ninguém pediu minha opinião",
@@ -33,7 +33,7 @@
     "static_path": "static",
     "media_path": "media",
     "card_image": "",
-    "banner_image": "",
+    "banner_image": "https://yt3.googleusercontent.com/tTDf17wusDtAOct0zW93LeDiU-mVFuIJlC5kUrNnBX3LnGTAM2MERxC3RpCf66KWSkpy4MBb=w1707-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj",
     "logo_image": "",
     "default_date_format": "%d %b %Y",
     "menu": [

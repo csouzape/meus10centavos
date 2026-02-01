@@ -13,7 +13,7 @@ Não sou ninguém relevante, apenas um Fabrício entre os outros 167.869 FABRÍC
 
 ## Sobre o blog
 
-Por que o nome é "Meus 10 centavos?" Porque eu quis :)
+Por que o nome é "Meus 10 centavos?" Porque eu quis :slightly_smiling_face:
 
 Minha ideia com esse blog é manter minhas opiniões e dicas que práticamente toda semana alguém me pergunta, então iriei manter Meus 10 Centavos como um hub dos meus conhecimentos e experiência, uma outra boa definição é segundo cérebro.
 
@@ -22,6 +22,7 @@ Não iriei discutir necesariamente sobre os assuntos _trend topics_ da semana. O
 Não haverá uma categoria fixa para rotular meu blog, tipo: tutorial, carreira, notícias tech. E nem quero...
 
 Aqui posso falar sem forçar o exibisionismo técnico que é exigido no GitHub e sem a falsidade do LinkedIn. Aqui posso ser eu mesmo e falar do meu jeitinho, delicado igual um cavalo, como meus amigos costumam dizer.
+
 ## Contato
 
 - **GitHub:** [github.com/Fabricio-Antonio](https://github.com/Fabricio-Antonio)
@@ -30,4 +31,3 @@ Aqui posso falar sem forçar o exibisionismo técnico que é exigido no GitHub e
 ---
 
 *Obrigado por visitar! Espero que encontre algo útil por aqui.*
-        

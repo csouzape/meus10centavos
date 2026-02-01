@@ -16,19 +16,19 @@
     <loc>/tag-blog.html</loc>
   </url>
   <url>
-    <loc>/tag-rust.html</loc>
+    <loc>/tag-tutorial.html</loc>
   </url>
   <url>
-    <loc>/tag-tutorial.html</loc>
+    <loc>/tag-marmite.html</loc>
+  </url>
+  <url>
+    <loc>/tag-rust.html</loc>
   </url>
   <url>
     <loc>/tag-pessoal.html</loc>
   </url>
   <url>
     <loc>/tag-inicio.html</loc>
-  </url>
-  <url>
-    <loc>/tag-marmite.html</loc>
   </url>
   <url>
     <loc>/tags.html</loc>
@@ -55,19 +55,19 @@
     <loc>/tag-blog.rss</loc>
   </url>
   <url>
-    <loc>/tag-rust.rss</loc>
+    <loc>/tag-tutorial.rss</loc>
   </url>
   <url>
-    <loc>/tag-tutorial.rss</loc>
+    <loc>/tag-marmite.rss</loc>
+  </url>
+  <url>
+    <loc>/tag-rust.rss</loc>
   </url>
   <url>
     <loc>/tag-pessoal.rss</loc>
   </url>
   <url>
     <loc>/tag-inicio.rss</loc>
-  </url>
-  <url>
-    <loc>/tag-marmite.rss</loc>
   </url>
   <url>
     <loc>/author-fabricio.rss</loc>
@@ -82,19 +82,19 @@
     <loc>/tag-blog.json</loc>
   </url>
   <url>
-    <loc>/tag-rust.json</loc>
+    <loc>/tag-tutorial.json</loc>
   </url>
   <url>
-    <loc>/tag-tutorial.json</loc>
+    <loc>/tag-marmite.json</loc>
+  </url>
+  <url>
+    <loc>/tag-rust.json</loc>
   </url>
   <url>
     <loc>/tag-pessoal.json</loc>
   </url>
   <url>
     <loc>/tag-inicio.json</loc>
-  </url>
-  <url>
-    <loc>/tag-marmite.json</loc>
   </url>
   <url>
     <loc>/author-fabricio.json</loc>
@@ -109,19 +109,19 @@
     <loc>/tag-blog-1.html</loc>
   </url>
   <url>
-    <loc>/tag-rust-1.html</loc>
+    <loc>/tag-tutorial-1.html</loc>
   </url>
   <url>
-    <loc>/tag-tutorial-1.html</loc>
+    <loc>/tag-marmite-1.html</loc>
+  </url>
+  <url>
+    <loc>/tag-rust-1.html</loc>
   </url>
   <url>
     <loc>/tag-pessoal-1.html</loc>
   </url>
   <url>
     <loc>/tag-inicio-1.html</loc>
-  </url>
-  <url>
-    <loc>/tag-marmite-1.html</loc>
   </url>
   <url>
     <loc>/author-fabricio-1.html</loc>
