@@ -1,0 +1,84 @@
+{
+  "posts": [
+    "/bem-vindo.html",
+    "/como-criar-blog-marmite.html"
+  ],
+  "pages": [
+    "/about.html",
+    "/pages.html"
+  ],
+  "tags": [
+    "/tag-blog.html",
+    "/tag-rust.html",
+    "/tag-tutorial.html",
+    "/tag-pessoal.html",
+    "/tag-inicio.html",
+    "/tag-marmite.html",
+    "/tags.html"
+  ],
+  "authors": [
+    "/author-fabricio.html",
+    "/authors.html"
+  ],
+  "series": [],
+  "streams": [
+    "/streams.html"
+  ],
+  "archives": [
+    "/archive-2026.html",
+    "/archive.html"
+  ],
+  "feeds": [
+    "/index.rss",
+    "/tag-blog.rss",
+    "/tag-rust.rss",
+    "/tag-tutorial.rss",
+    "/tag-pessoal.rss",
+    "/tag-inicio.rss",
+    "/tag-marmite.rss",
+    "/author-fabricio.rss",
+    "/archive-2026.rss",
+    "/index.json",
+    "/tag-blog.json",
+    "/tag-rust.json",
+    "/tag-tutorial.json",
+    "/tag-pessoal.json",
+    "/tag-inicio.json",
+    "/tag-marmite.json",
+    "/author-fabricio.json",
+    "/archive-2026.json"
+  ],
+  "pagination": [
+    "/pages-1.html",
+    "/tag-blog-1.html",
+    "/tag-rust-1.html",
+    "/tag-tutorial-1.html",
+    "/tag-pessoal-1.html",
+    "/tag-inicio-1.html",
+    "/tag-marmite-1.html",
+    "/author-fabricio-1.html",
+    "/archive-2026-1.html"
+  ],
+  "file_mappings": [],
+  "misc": [
+    "/index.html"
+  ],
+  "summary": {
+    "posts": 2,
+    "pages": 2,
+    "tags": 7,
+    "authors": 2,
+    "series": 0,
+    "streams": 1,
+    "archives": 2,
+    "feeds": 18,
+    "pagination": 9,
+    "file_mappings": 0,
+    "misc": 1,
+    "total": 44,
+    "meta": {
+      "url": "",
+      "absolute_urls": false
+    }
+  }
+}

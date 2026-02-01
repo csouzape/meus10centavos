@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark" />
+    <meta name="generator" content="Marmite" />
+    
+<meta property="og:title" content="Como criar um blog com Marmite">
+
+<meta property="og:description" content="
+Neste tutorial, vou mostrar como criar seu próprio blog usando o Marmite, um gerador de sites estát...">
+
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Meus 10 Centavos">
+
+<meta property="article:published_time" content=" 2026-01-31T00:00:00+00:00">
+
+
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/como-criar-blog-marmite.html"
+    },
+    "url": "/como-criar-blog-marmite.html",
+    "headline": "Como criar um blog com Marmite",
+    "description": "Neste tutorial, vou mostrar como criar seu próprio blog usando o Marmite, um gerador de sites estáticos escrito em Rust.
+O que é o Marmite?
+...",
+    
+    "author": {
+        "@type": "Person",
+        "name": "Fabrício Santos",
+        "url": "/author-fabricio.html",
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Meus 10 Centavos",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "/"
+        }
+    },
+    "datePublished": "2026-01-31T00:00:00+00:00"
+}
+</script>
+
+
+    <title>Como criar um blog com Marmite | Meus 10 Centavos</title>
+    <link rel="stylesheet" type="text/css" href="/static/pico.min.css">
+    <link rel="stylesheet" type="text/css" href="/static/marmite.css">
+    
+    <link rel="stylesheet" type="text/css" href="/static/custom.css">
+    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/styles/github.min.css" id="highlightjs-theme" />
+
+
+
+        <link rel="alternate" type="application/rss+xml" title="index" href="/index.rss">
+    <link rel="alternate" type="application/rss+xml" title="tag: blog" href="/tag-blog.rss">
+    <link rel="alternate" type="application/rss+xml" title="tag: tutorial" href="/tag-tutorial.rss">
+    <link rel="alternate" type="application/rss+xml" title="tag: pessoal" href="/tag-pessoal.rss">
+    <link rel="alternate" type="application/rss+xml" title="tag: inicio" href="/tag-inicio.rss">
+    <link rel="alternate" type="application/rss+xml" title="tag: rust" href="/tag-rust.rss">
+    <link rel="alternate" type="application/rss+xml" title="tag: marmite" href="/tag-marmite.rss">
+    <link rel="alternate" type="application/rss+xml" title="author: fabricio" href="/author-fabricio.rss">
+    <link rel="alternate" type="application/rss+xml" title="year: 2026" href="/archive-2026.rss">
+    
+
+    
+    <link rel="alternate" type="application/feed+json" title="JSON index" href="/index.json">
+    <link rel="alternate" type="application/feed+json" title="JSON tag: blog" href="/tag-blog.json">
+    <link rel="alternate" type="application/feed+json" title="JSON tag: tutorial" href="/tag-tutorial.json">
+    <link rel="alternate" type="application/feed+json" title="JSON tag: pessoal" href="/tag-pessoal.json">
+    <link rel="alternate" type="application/feed+json" title="JSON tag: inicio" href="/tag-inicio.json">
+    <link rel="alternate" type="application/feed+json" title="JSON tag: rust" href="/tag-rust.json">
+    <link rel="alternate" type="application/feed+json" title="JSON tag: marmite" href="/tag-marmite.json">
+    <link rel="alternate" type="application/feed+json" title="JSON author: fabricio" href="/author-fabricio.json">
+    <link rel="alternate" type="application/feed+json" title="JSON year: 2026" href="/archive-2026.json">
+    
+    
+
+    
+    
+</head>
+<body>
+    
+    <div class="container-fluid announcement-wrapper">
+        <div class="announcement"><p>Siga-me nas redes: <a href="https://github.com/Fabricio-Antonio">GitHub</a> e <a href="https://www.linkedin.com/in/fabricio-ss/">LinkedIn</a></p>
+</div>
+    </div>
+    
+    <main class="container">
+        
+        <header class="header-content">
+            <nav class="header-nav">
+                <ul class="header-name">
+                    <li>
+                        <hgroup class="h-card">
+                            <h2>
+                                <a href="/" class="contrast p-name u-url">
+                                    
+                                        Meus 10 Centavos
+                                    
+                                </a>
+                            </h2>
+                             <p class="p-note">Meus 10 centavos de contribuição para uma discussão que ninguém pediu minha opinião</p> 
+                        </hgroup>
+                    </li>
+                </ul>
+                <button id="menu-toggle" class="hamburger">&#9776;</button>
+
+                <ul class="header-menu" id="header-menu">
+                    
+                      
+                      
+                    <li>
+                        
+                        <a class="menu-item secondary"  href="/index.html">Início</a>
+                        
+                    </li>
+                    
+                      
+                      
+                    <li>
+                        
+                        <a class="menu-item secondary"  href="/tags.html">Tags</a>
+                        
+                    </li>
+                    
+                      
+                      
+                    <li>
+                        
+                        <a class="menu-item secondary"  href="/archive.html">Arquivo</a>
+                        
+                    </li>
+                    
+                      
+                      
+                    <li>
+                        
+                        <a class="menu-item secondary"  href="/about.html">Sobre</a>
+                        
+                    </li>
+                    
+                    
+                    
+                    <li><a href="#" id="search-toggle" class="secondary" title="Search (Ctrl + Shift + F)"> <span class="search-txt">Search</span><span class="search-magnifier"></span></a></li>
+                    
+                    <div class="underline"></div>
+                </ul>
+            </nav>
+            
+            <div class="marmite-background-overlay" id="overlay-close"></div>
+            <div class="marmite-search-bar hidden">
+                <span>Buscar</span>
+                <button class="marmite-close-button" id="search-close">X</button>
+                <input placeholder="Search" id="marmite-search-input" />
+                <div class="marmite-search-bar-result">
+                    <ul id="marmite-search-bar-result"></ul>
+                </div>
+            </div>
+            
+        </header>
+        
+        <section class="main-content">
+            
+
+
+
+<article class="h-entry">
+  <data class="p-name" value="Como criar um blog com Marmite"></data>
+  <a class="u-url" href="/como-criar-blog-marmite.html" style="display: none;"></a>
+  
+  <time class="dt-published" datetime="2026-01-31T00:00:00+00:00" style="display: none;">31 Jan 2026</time>
+  
+
+  
+
+  
+
+
+<div class="content-title" id="title">
+    <h1>Como criar um blog com Marmite</h1> 
+    
+
+
+<span class="content-date">
+    <small> 31 Jan 2026 - &#10710; 1 min</small>
+</span>
+
+</div>
+
+  
+  
+  <div class="content-toc">
+    <a href="#" id="toc"></a>
+    <details>
+    <summary>🗒️</summary>
+    <ul>
+<ul>
+<li><a href="#o-que-é-o-marmite">O que é o Marmite?</a></li>
+<li><a href="#instalação">Instalação</a></li>
+<li><a href="#criando-seu-primeiro-blog">Criando seu primeiro blog</a></li>
+<li><a href="#estrutura-de-um-post">Estrutura de um post</a></li>
+<li><a href="#próximos-passos">Próximos passos</a></li>
+</ul>
+</ul>
+
+    </details>
+  </div>
+  
+
+  <div class="content-html e-content"><!-- Content Injected to every content markdown header -->
+<p>Neste tutorial, vou mostrar como criar seu próprio blog usando o <strong>Marmite</strong>, um gerador de sites estáticos escrito em Rust.</p>
+<h2><a href="#o-que-é-o-marmite" aria-hidden="true" class="anchor" id="o-que-é-o-marmite"></a>O que é o Marmite?</h2>
+<p><a href="https://marmite.blog/">Marmite</a> é um gerador de sites estáticos minimalista que transforma arquivos Markdown em um blog completo. Suas principais características são:</p>
+<ul>
+<li><strong>Zero configuração</strong> para começar</li>
+<li><strong>Escrito em Rust</strong> — rápido e eficiente</li>
+<li><strong>Temas e colorschemes</strong> incluídos</li>
+<li><strong>Busca integrada</strong></li>
+<li><strong>RSS Feed</strong></li>
+<li><strong>Suporte a tags e arquivos</strong></li>
+</ul>
+<h2><a href="#instalação" aria-hidden="true" class="anchor" id="instalação"></a>Instalação</h2>
+<p>A forma mais fácil de instalar é usando o script de instalação:</p>
+<pre><code class="language-bash">curl -sS https://marmite.blog/install.sh | sh
+</code></pre>
+<p>Ou se você tem Rust instalado:</p>
+<pre><code class="language-bash">cargo install marmite
+</code></pre>
+<h2><a href="#criando-seu-primeiro-blog" aria-hidden="true" class="anchor" id="criando-seu-primeiro-blog"></a>Criando seu primeiro blog</h2>
+<ol>
+<li><strong>Crie uma pasta para o conteúdo:</strong></li>
+</ol>
+<pre><code class="language-bash">mkdir meu-blog
+cd meu-blog
+</code></pre>
+<ol start="2">
+<li><strong>Inicialize o blog:</strong></li>
+</ol>
+<pre><code class="language-bash">marmite . --init-site \
+    --name &quot;Meu Blog&quot; \
+    --tagline &quot;Minha descrição&quot; \
+    --enable-search true
+</code></pre>
+<ol start="3">
+<li><strong>Crie seu primeiro post:</strong></li>
+</ol>
+<pre><code class="language-bash">marmite . --new &quot;Meu Primeiro Post&quot; -t &quot;novo,post&quot;
+</code></pre>
+<ol start="4">
+<li><strong>Gere e visualize o site:</strong></li>
+</ol>
+<pre><code class="language-bash">marmite . --serve
+</code></pre>
+<p>Acesse <code>http://localhost:8000</code> e veja seu blog funcionando!</p>
+<h2><a href="#estrutura-de-um-post" aria-hidden="true" class="anchor" id="estrutura-de-um-post"></a>Estrutura de um post</h2>
+<p>Os posts são arquivos Markdown com um frontmatter YAML:</p>
+<pre><code class="language-markdown">---
+title: &quot;Título do Post&quot;
+date: 2026-01-31
+tags: tag1, tag2
+---
+
+Conteúdo do post aqui...
+</code></pre>
+<h2><a href="#próximos-passos" aria-hidden="true" class="anchor" id="próximos-passos"></a>Próximos passos</h2>
+<ul>
+<li>Personalize o <code>marmite.yaml</code> com suas informações</li>
+<li>Explore os colorschemes disponíveis</li>
+<li>Adicione mais conteúdo!</li>
+</ul>
+<hr />
+<p>Gostou? Deixe seu comentário!</p>
+<!-- Content Injected to every content markdown footer -->
+</div>
+  
+  <footer class="data-tags-footer">
+
+    <div class="content-authors-flex">
+      <div class="content-authors-full">
+        
+<div class="content-authors">
+    <ul>
+        
+            
+            
+            <li class="h-card p-author">
+                
+                
+                <a href="/author-fabricio.html" class="u-url">
+                    <img src="https://avatars.githubusercontent.com/u/90152237?v=4" alt="Fabrício Santos" class="avatar u-photo">
+                    <span class="p-name">Fabrício Santos</span>
+                </a>
+            </li>
+            
+        
+    </ul>
+</div>
+
+
+      </div>
+
+      <div class="date-tags-container">
+        <div class="content-date">
+          
+
+
+<span class="content-date">
+    <small> 31 Jan 2026 - &#10710; 1 min</small>
+</span>
+
+          
+        </div>
+
+        <ul class="content-tags">
+          
+          
+          
+          <li><a href="/tag-tutorial.html" class="p-category">tutorial</a></li>
+          
+          
+          
+          <li><a href="/tag-marmite.html" class="p-category">marmite</a></li>
+          
+          
+          
+          <li><a href="/tag-rust.html" class="p-category">rust</a></li>
+          
+          
+          
+          <li><a href="/tag-blog.html" class="p-category">blog</a></li>
+          
+        </ul>
+      </div>
+    </div>
+  </footer>
+  
+</article>
+
+
+
+
+
+  
+  
+  
+  
+  
+
+
+
+
+<article>
+  <nav style="display: flex; justify-content: space-between;">
+    <div>
+      
+    </div>
+    <div>
+      <a href="/bem-vindo.html">Bem-vindo(a) ao Meus 10 Centavos! →</a>
+    </div>
+  </nav>
+</article>
+
+
+
+    <article><h5><a href="#comentários" aria-hidden="true" class="anchor" id="comentários"></a>Comentários</h5>
+<script src='https://utteranc.es/client.js'
+repo='Fabricio-Antonio/meus10centavos'
+issue-term='pathname'
+theme='github-dark'
+crossorigin='anonymous'
+async>
+</script>
+</article>
+
+
+
+
+
+
+        </section>
+        
+        <footer class="footer-content grid">
+            <div>
+  © 2026 · Meus 10 Centavos by <a href="https://www.linkedin.com/in/fabricio-ss/">Fabrício Santos</a> ·
+  <a href="https://github.com/rochacbruno/marmite">Marmite</a>
+</div>
+
+            
+        </footer>
+        
+    </main>
+
+    <script src="/static/marmite.js"></script>
+    <script src="/static/custom.js"></script>
+    
+    <script type="module" src="/static/search.js"></script>
+    
+    
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/highlight.min.js"></script>
+<script>
+  hljs.highlightAll();
+</script>
+
+
+
+</body>
+</html>
