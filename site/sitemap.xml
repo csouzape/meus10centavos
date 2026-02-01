@@ -1,135 +1,135 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://github.com/Fabricio-Antonio/meus10centavos/bem-vindo.html</loc>
+    <loc>/bem-vindo.html</loc>
   </url>
   <url>
-    <loc>https://github.com/Fabricio-Antonio/meus10centavos/como-criar-blog-marmite.html</loc>
+    <loc>/como-criar-blog-marmite.html</loc>
   </url>
   <url>
-    <loc>https://github.com/Fabricio-Antonio/meus10centavos/about.html</loc>
+    <loc>/about.html</loc>
   </url>
   <url>
-    <loc>https://github.com/Fabricio-Antonio/meus10centavos/pages.html</loc>
+    <loc>/pages.html</loc>
   </url>
   <url>
-    <loc>https://github.com/Fabricio-Antonio/meus10centavos/tag-blog.html</loc>
+    <loc>/tag-blog.html</loc>
   </url>
   <url>
-    <loc>https://github.com/Fabricio-Antonio/meus10centavos/tag-rust.html</loc>
+    <loc>/tag-pessoal.html</loc>
   </url>
   <url>
-    <loc>https://github.com/Fabricio-Antonio/meus10centavos/tag-inicio.html</loc>
+    <loc>/tag-rust.html</loc>
   </url>
   <url>
-    <loc>https://github.com/Fabricio-Antonio/meus10centavos/tag-pessoal.html</loc>
+    <loc>/tag-tutorial.html</loc>
   </url>
   <url>
-    <loc>https://github.com/Fabricio-Antonio/meus10centavos/tag-marmite.html</loc>
+    <loc>/tag-marmite.html</loc>
   </url>
   <url>
-    <loc>https://github.com/Fabricio-Antonio/meus10centavos/tag-tutorial.html</loc>
+    <loc>/tag-inicio.html</loc>
   </url>
   <url>
-    <loc>https://github.com/Fabricio-Antonio/meus10centavos/tags.html</loc>
+    <loc>/tags.html</loc>
   </url>
   <url>
-    <loc>https://github.com/Fabricio-Antonio/meus10centavos/author-fabricio.html</loc>
+    <loc>/author-fabricio.html</loc>
   </url>
   <url>
-    <loc>https://github.com/Fabricio-Antonio/meus10centavos/authors.html</loc>
+    <loc>/authors.html</loc>
   </url>
   <url>
-    <loc>https://github.com/Fabricio-Antonio/meus10centavos/streams.html</loc>
+    <loc>/streams.html</loc>
   </url>
   <url>
-    <loc>https://github.com/Fabricio-Antonio/meus10centavos/archive-2026.html</loc>
+    <loc>/archive-2026.html</loc>
   </url>
   <url>
-    <loc>https://github.com/Fabricio-Antonio/meus10centavos/archive.html</loc>
+    <loc>/archive.html</loc>
   </url>
   <url>
-    <loc>https://github.com/Fabricio-Antonio/meus10centavos/index.rss</loc>
+    <loc>/index.rss</loc>
   </url>
   <url>
-    <loc>https://github.com/Fabricio-Antonio/meus10centavos/tag-blog.rss</loc>
+    <loc>/tag-blog.rss</loc>
   </url>
   <url>
-    <loc>https://github.com/Fabricio-Antonio/meus10centavos/tag-rust.rss</loc>
+    <loc>/tag-pessoal.rss</loc>
   </url>
   <url>
-    <loc>https://github.com/Fabricio-Antonio/meus10centavos/tag-inicio.rss</loc>
+    <loc>/tag-rust.rss</loc>
   </url>
   <url>
-    <loc>https://github.com/Fabricio-Antonio/meus10centavos/tag-pessoal.rss</loc>
+    <loc>/tag-tutorial.rss</loc>
   </url>
   <url>
-    <loc>https://github.com/Fabricio-Antonio/meus10centavos/tag-marmite.rss</loc>
+    <loc>/tag-marmite.rss</loc>
   </url>
   <url>
-    <loc>https://github.com/Fabricio-Antonio/meus10centavos/tag-tutorial.rss</loc>
+    <loc>/tag-inicio.rss</loc>
   </url>
   <url>
-    <loc>https://github.com/Fabricio-Antonio/meus10centavos/author-fabricio.rss</loc>
+    <loc>/author-fabricio.rss</loc>
   </url>
   <url>
-    <loc>https://github.com/Fabricio-Antonio/meus10centavos/archive-2026.rss</loc>
+    <loc>/archive-2026.rss</loc>
   </url>
   <url>
-    <loc>https://github.com/Fabricio-Antonio/meus10centavos/index.json</loc>
+    <loc>/index.json</loc>
   </url>
   <url>
-    <loc>https://github.com/Fabricio-Antonio/meus10centavos/tag-blog.json</loc>
+    <loc>/tag-blog.json</loc>
   </url>
   <url>
-    <loc>https://github.com/Fabricio-Antonio/meus10centavos/tag-rust.json</loc>
+    <loc>/tag-pessoal.json</loc>
   </url>
   <url>
-    <loc>https://github.com/Fabricio-Antonio/meus10centavos/tag-inicio.json</loc>
+    <loc>/tag-rust.json</loc>
   </url>
   <url>
-    <loc>https://github.com/Fabricio-Antonio/meus10centavos/tag-pessoal.json</loc>
+    <loc>/tag-tutorial.json</loc>
   </url>
   <url>
-    <loc>https://github.com/Fabricio-Antonio/meus10centavos/tag-marmite.json</loc>
+    <loc>/tag-marmite.json</loc>
   </url>
   <url>
-    <loc>https://github.com/Fabricio-Antonio/meus10centavos/tag-tutorial.json</loc>
+    <loc>/tag-inicio.json</loc>
   </url>
   <url>
-    <loc>https://github.com/Fabricio-Antonio/meus10centavos/author-fabricio.json</loc>
+    <loc>/author-fabricio.json</loc>
   </url>
   <url>
-    <loc>https://github.com/Fabricio-Antonio/meus10centavos/archive-2026.json</loc>
+    <loc>/archive-2026.json</loc>
   </url>
   <url>
-    <loc>https://github.com/Fabricio-Antonio/meus10centavos/pages-1.html</loc>
+    <loc>/pages-1.html</loc>
   </url>
   <url>
-    <loc>https://github.com/Fabricio-Antonio/meus10centavos/tag-blog-1.html</loc>
+    <loc>/tag-blog-1.html</loc>
   </url>
   <url>
-    <loc>https://github.com/Fabricio-Antonio/meus10centavos/tag-rust-1.html</loc>
+    <loc>/tag-pessoal-1.html</loc>
   </url>
   <url>
-    <loc>https://github.com/Fabricio-Antonio/meus10centavos/tag-inicio-1.html</loc>
+    <loc>/tag-rust-1.html</loc>
   </url>
   <url>
-    <loc>https://github.com/Fabricio-Antonio/meus10centavos/tag-pessoal-1.html</loc>
+    <loc>/tag-tutorial-1.html</loc>
   </url>
   <url>
-    <loc>https://github.com/Fabricio-Antonio/meus10centavos/tag-marmite-1.html</loc>
+    <loc>/tag-marmite-1.html</loc>
   </url>
   <url>
-    <loc>https://github.com/Fabricio-Antonio/meus10centavos/tag-tutorial-1.html</loc>
+    <loc>/tag-inicio-1.html</loc>
   </url>
   <url>
-    <loc>https://github.com/Fabricio-Antonio/meus10centavos/author-fabricio-1.html</loc>
+    <loc>/author-fabricio-1.html</loc>
   </url>
   <url>
-    <loc>https://github.com/Fabricio-Antonio/meus10centavos/archive-2026-1.html</loc>
+    <loc>/archive-2026-1.html</loc>
   </url>
   <url>
-    <loc>https://github.com/Fabricio-Antonio/meus10centavos/index.html</loc>
+    <loc>/index.html</loc>
   </url>
 </urlset>
