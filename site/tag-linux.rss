@@ -1,4 +1,73 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Meus 10 Centavos</title><link>http://</link><description>Meus 10 centavos de contribuição para uma discussão que ninguém pediu minha opinião</description><pubDate>Sun, 01 Feb 2026 00:00:00 GMT</pubDate><lastBuildDate>Mon, 02 Feb 2026 02:20:25 GMT</lastBuildDate><generator>marmite</generator><item><title>Como matar processos no linux</title><link>http:///como-matar-processos-no-linux.html</link><author>fabricio</author><category>tutorial</category><category>linux</category><guid>http:///como-matar-processos-no-linux.html</guid><pubDate>Sun, 01 Feb 2026 00:00:00 GMT</pubDate><source url="http://">tag-linux</source><content:encoded><![CDATA[<!-- Content Injected to every content markdown header -->
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Meus 10 Centavos</title><link>https://github.com/Fabricio-Antonio/meus10centavos</link><description>Meus 10 centavos de contribuição para uma discussão que ninguém pediu minha opinião</description><pubDate>Mon, 02 Feb 2026 00:00:00 GMT</pubDate><lastBuildDate>Mon, 02 Feb 2026 06:41:56 GMT</lastBuildDate><generator>marmite</generator><item><title>Como fazer SWAP</title><link>https://github.com/Fabricio-Antonio/meus10centavos/como-fazer-swap.html</link><author>fabricio</author><category>tutorial</category><category>linux</category><guid>https://github.com/Fabricio-Antonio/meus10centavos/como-fazer-swap.html</guid><pubDate>Mon, 02 Feb 2026 00:00:00 GMT</pubDate><source url="https://github.com/Fabricio-Antonio/meus10centavos">tag-linux</source><content:encoded><![CDATA[<!-- Content Injected to every content markdown header -->
+<h2><a href="#o-que-é-swap" aria-hidden="true" class="anchor" id="o-que-é-swap"></a>O que é SWAP?</h2>
+<p>A swap é uma extensão temporária da sua memória RAM, feita usando o espaço do seu SSD ou HD tipo uma &quot;memória RAM fake&quot;.</p>
+<p>Quando a RAM enche, o Linux começa a jogar dados &quot;menos usados&quot; pra esse espaço da swap, pra liberar RAM pra o que é mais urgente.</p>
+<p>&quot;E se eu não fizer isso?&quot;, você pode questionar. O Linux é um sistema que obedece cegamente, caso você esgote a memória RAM e não tenha uma swap configurada, ele simplismente vai travar o sistema e você vai ter que reiniciar sua máquina. Digo isso por experiência própria...</p>
+<p>&quot;Por qual motivo eu nunca ouvi falar disso?&quot;, talvez você esteja se questionando. Se você está nesse artigo então é grande a possibilidade de você ser recém-chegado no mundo Linux migrando do Ruindows, bem provavelmente. Os outros sistemas fazem esse gerenciamento de forma automática e você não precisa nem saber que isso existe.</p>
+<h2><a href="#como-a-swap-funciona-na-prática" aria-hidden="true" class="anchor" id="como-a-swap-funciona-na-prática"></a>Como a SWAP funciona na prática?</h2>
+<p>O sistema monitora o uso da RAM.</p>
+<p>Quando a RAM se aproxima do limite (dependendo do valor de <code>swappiness</code>), ele começa a mover partes da memória pouco usadas pra swap. Essas partes continuam acessíveis, mas ficam no SSD/HD (muito mais lento que a RAM). Isso evita travamentos e aumenta a estabilidade, principalmente em multitarefa.</p>
+<h3><a href="#observações-importantes" aria-hidden="true" class="anchor" id="observações-importantes"></a>Observações importantes!</h3>
+<p><strong>Swap é mais lenta que RAM.</strong><br />
+Porque seu SSD (ou pior, um HD) é muito mais lento que RAM. Se o sistema começar a depender demais da swap, você sente um lag violento.</p>
+<p><strong>Swap constante = desgaste do SSD.</strong><br />
+Swap em SSD não é o fim do mundo, mas se ela for usada o tempo todo, vai acelerar o desgaste. Por isso é bom manter a RAM &quot;limpa&quot; e limitar o uso da swap com <code>swappiness</code>.</p>
+<h2><a href="#configurando-swap" aria-hidden="true" class="anchor" id="configurando-swap"></a>Configurando SWAP</h2>
+<p>Rode o comando:</p>
+<pre><code>swapon --show
+</code></pre>
+<p>Para verificar ter certeza se você tem uma swap, mas 90% de chance de não ter.<br />
+Se você não tem swap não terá nenhum retorno, mas se você tiver swap irá ter retorno semelhante a este:</p>
+<pre><code>NAME      TYPE SIZE USED PRIO
+/swapfile file   8G   3G   -2
+</code></pre>
+<h4><a href="#criarativar-swap-file-se-não-tiver" aria-hidden="true" class="anchor" id="criarativar-swap-file-se-não-tiver"></a>Criar/ativar SWAP file (se não tiver)</h4>
+<h5><a href="#comando-completo" aria-hidden="true" class="anchor" id="comando-completo"></a>Comando completo:</h5>
+<pre><code># Cria um swap de 4GB (ajuste se quiser)
+sudo fallocate -l 4G /swapfile
+sudo chmod 600 /swapfile
+sudo mkswap /swapfile
+sudo swapon /swapfile
+</code></pre>
+<p>Depois adicione no fstab para ativar automaticamente:</p>
+<pre><code>echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
+</code></pre>
+<h5><a href="#comando-com-explicações" aria-hidden="true" class="anchor" id="comando-com-explicações"></a>Comando com explicações:</h5>
+<p>Criar um arquivo de swap com 4 GB</p>
+<pre><code>sudo fallocate -l 4G /swapfile
+</code></pre>
+<p>Criamos um arquivo especial de 4 GB chamado <code>/swapfile</code>, que será usado como “RAM falsa” quando a memória real estiver cheia.</p>
+<p>Restringir o acesso ao arquivo de swap</p>
+<pre><code>sudo chmod 600 /swapfile
+</code></pre>
+<p>Demos permissão de leitura/escrita só pro root, por segurança. Isso impede que outro processo leia ou altere esse arquivo diretamente.</p>
+<p>Formatar esse arquivo como uma área de swap</p>
+<pre><code>sudo mkswap /swapfile
+</code></pre>
+<p>Dizemos ao sistema:
+“Esse arquivo aqui é uma área de swap, tá ok? 👉👉 ”<br />
+Ele cria a estrutura de controle necessária.</p>
+<p>Ativar a swap agora</p>
+<pre><code>sudo swapon /swapfile
+</code></pre>
+<p>Ligamos a swap imediatamente.<br />
+A partir desse momento, o sistema pode começar a usar esse arquivo como memória auxiliar.\</p>
+<p>Configurar para ativar automaticamente no boot</p>
+<pre><code>echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
+</code></pre>
+<p>Alteramos o arquivo <code>/etc/fstab</code> (que diz o que montar no boot), pra garantir que <strong>sempre que você reiniciar, a swap vai estar ativa.</strong></p>
+<p>Por padrão, o Linux só usa a swap quando a RAM já está no limite. Você pode mudar isso pra ele ser um pouco mais &quot;esperto&quot; e já ir aliviando antes de travar tudo.</p>
+<p>Rode:</p>
+<pre><code>cat /proc/sys/vm/swappiness
+</code></pre>
+<p>Para verificar o valor atual. Provavelmente <code>60</code></p>
+<p>Reduza o lag e evitar travamento total, coloca algo tipo <code>20</code>:</p>
+<pre><code>echo 'vm.swappiness=20' | sudo tee -a /etc/sysctl.conf
+sudo sysctl -p
+</code></pre>
+<p>Isso faz o sistema usar a swap de forma mais equilibrada com a RAM. Se quiser testar o comportamento, você pode começar com <code>30</code> e ir ajustando depois.</p>
+<!-- Content Injected to every content markdown footer -->
+]]></content:encoded></item><item><title>Como matar processos no linux</title><link>https://github.com/Fabricio-Antonio/meus10centavos/como-matar-processos-no-linux.html</link><author>fabricio</author><category>tutorial</category><category>linux</category><guid>https://github.com/Fabricio-Antonio/meus10centavos/como-matar-processos-no-linux.html</guid><pubDate>Sun, 01 Feb 2026 00:00:00 GMT</pubDate><source url="https://github.com/Fabricio-Antonio/meus10centavos">tag-linux</source><content:encoded><![CDATA[<!-- Content Injected to every content markdown header -->
 <p>É um tutorial de algo besta, mas eu sempre acabo esquecendo como faz, então vou salvar aqui</p>
 <p>Lista todos os processo que estão rodando</p>
 <pre><code class="language-bash">sudo netstats -tlpn
