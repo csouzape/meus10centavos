@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Meus 10 Centavos</title><link>http://</link><description>Meus 10 centavos de contribuição para uma discussão que ninguém pediu minha opinião</description><pubDate>Sun, 01 Feb 2026 00:00:00 GMT</pubDate><lastBuildDate>Mon, 02 Feb 2026 02:20:25 GMT</lastBuildDate><generator>marmite</generator><item><title>Como matar processos no linux</title><link>http:///como-matar-processos-no-linux.html</link><author>fabricio</author><category>tutorial</category><category>linux</category><guid>http:///como-matar-processos-no-linux.html</guid><pubDate>Sun, 01 Feb 2026 00:00:00 GMT</pubDate><source url="http://">tag-linux</source><content:encoded><![CDATA[<!-- Content Injected to every content markdown header -->
+<p>É um tutorial de algo besta, mas eu sempre acabo esquecendo como faz, então vou salvar aqui</p>
+<p>Lista todos os processo que estão rodando</p>
+<pre><code class="language-bash">sudo netstats -tlpn
+</code></pre>
+<p>Lista todos os processos que estão rodando na porta &lt;número&gt;</p>
+<pre><code class="language-bash">sudo netstats -tlpn | grep &lt;número&gt;
+</code></pre>
+<p>Mata processo que está rodando na porta 8000</p>
+<pre><code class="language-bash">sudo kill -9 `sudo lsof -t -i:&lt;número&gt;`
+sudo kill -9 $(lsof -t -i:&lt;número&gt;)
+</code></pre>
+<p>obs.: &lt;número&gt; deve ser todo incluindo o &lt;&gt; ser torcado pelo número</p>
+<!-- Content Injected to every content markdown footer -->
+]]></content:encoded></item></channel></rss>

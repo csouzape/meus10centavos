@@ -1,0 +1,30 @@
+{
+  "version": "https://jsonfeed.org/version/1",
+  "title": "Meus 10 Centavos",
+  "home_page_url": "",
+  "feed_url": "/tag-linux.json",
+  "description": "Meus 10 centavos de contribuição para uma discussão que ninguém pediu minha opinião",
+  "items": [
+    {
+      "id": "/como-matar-processos-no-linux.html",
+      "url": "/como-matar-processos-no-linux.html",
+      "title": "Como matar processos no linux",
+      "content_html": "<!-- Content Injected to every content markdown header -->\n<p>É um tutorial de algo besta, mas eu sempre acabo esquecendo como faz, então vou salvar aqui</p>\n<p>Lista todos os processo que estão rodando</p>\n<pre><code class=\"language-bash\">sudo netstats -tlpn\n</code></pre>\n<p>Lista todos os processos que estão rodando na porta &lt;número&gt;</p>\n<pre><code class=\"language-bash\">sudo netstats -tlpn | grep &lt;número&gt;\n</code></pre>\n<p>Mata processo que está rodando na porta 8000</p>\n<pre><code class=\"language-bash\">sudo kill -9 `sudo lsof -t -i:&lt;número&gt;`\nsudo kill -9 $(lsof -t -i:&lt;número&gt;)\n</code></pre>\n<p>obs.: &lt;número&gt; deve ser todo incluindo o &lt;&gt; ser torcado pelo número</p>\n<!-- Content Injected to every content markdown footer -->\n",
+      "summary": "",
+      "date_published": "2026-02-01T00:00:00-00:00",
+      "image": "",
+      "authors": [
+        {
+          "name": "Fabrício Santos",
+          "url": "",
+          "avatar": "https://avatars.githubusercontent.com/u/90152237?v=4"
+        }
+      ],
+      "tags": [
+        "tutorial",
+        "linux"
+      ],
+      "language": "pt-BR"
+    }
+  ]
+}
