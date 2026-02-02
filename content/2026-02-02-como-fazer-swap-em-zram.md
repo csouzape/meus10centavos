@@ -4,7 +4,7 @@ slug: como-fazer-swap-em-zram
 date: 2026-02-02
 tags: linux, tutorial
 author: carlos
-
+---
 
 ## Como Fazer Swap em Zram
 
