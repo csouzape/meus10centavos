@@ -1,84 +1,84 @@
 {
   "posts": [
-    "https://github.com/Fabricio-Antonio/meus10centavos/como-fazer-swap.html",
-    "https://github.com/Fabricio-Antonio/meus10centavos/cursos-gratis.html",
-    "https://github.com/Fabricio-Antonio/meus10centavos/como-aprender-um-novo-idioma.html",
-    "https://github.com/Fabricio-Antonio/meus10centavos/como-matar-processos-no-linux.html",
-    "https://github.com/Fabricio-Antonio/meus10centavos/bem-vindo.html",
-    "https://github.com/Fabricio-Antonio/meus10centavos/como-criar-blog-marmite.html"
+    "/como-fazer-swap.html",
+    "/cursos-gratis.html",
+    "/como-aprender-um-novo-idioma.html",
+    "/como-matar-processos-no-linux.html",
+    "/bem-vindo.html",
+    "/como-criar-blog-marmite.html"
   ],
   "pages": [
-    "https://github.com/Fabricio-Antonio/meus10centavos/about.html",
-    "https://github.com/Fabricio-Antonio/meus10centavos/README.html",
-    "https://github.com/Fabricio-Antonio/meus10centavos/pages.html"
+    "/about.html",
+    "/README.html",
+    "/pages.html"
   ],
   "tags": [
-    "https://github.com/Fabricio-Antonio/meus10centavos/tag-tutorial.html",
-    "https://github.com/Fabricio-Antonio/meus10centavos/tag-curso.html",
-    "https://github.com/Fabricio-Antonio/meus10centavos/tag-blog.html",
-    "https://github.com/Fabricio-Antonio/meus10centavos/tag-linux.html",
-    "https://github.com/Fabricio-Antonio/meus10centavos/tag-marmite.html",
-    "https://github.com/Fabricio-Antonio/meus10centavos/tag-inicio.html",
-    "https://github.com/Fabricio-Antonio/meus10centavos/tag-ingles.html",
-    "https://github.com/Fabricio-Antonio/meus10centavos/tag-pessoal.html",
-    "https://github.com/Fabricio-Antonio/meus10centavos/tag-rust.html",
-    "https://github.com/Fabricio-Antonio/meus10centavos/tags.html"
+    "/tag-tutorial.html",
+    "/tag-blog.html",
+    "/tag-curso.html",
+    "/tag-linux.html",
+    "/tag-pessoal.html",
+    "/tag-ingles.html",
+    "/tag-rust.html",
+    "/tag-marmite.html",
+    "/tag-inicio.html",
+    "/tags.html"
   ],
   "authors": [
-    "https://github.com/Fabricio-Antonio/meus10centavos/author-fabricio.html",
-    "https://github.com/Fabricio-Antonio/meus10centavos/authors.html"
+    "/author-fabricio.html",
+    "/authors.html"
   ],
   "series": [],
   "streams": [
-    "https://github.com/Fabricio-Antonio/meus10centavos/streams.html"
+    "/streams.html"
   ],
   "archives": [
-    "https://github.com/Fabricio-Antonio/meus10centavos/archive-2026.html",
-    "https://github.com/Fabricio-Antonio/meus10centavos/archive.html"
+    "/archive-2026.html",
+    "/archive.html"
   ],
   "feeds": [
-    "https://github.com/Fabricio-Antonio/meus10centavos/index.rss",
-    "https://github.com/Fabricio-Antonio/meus10centavos/tag-tutorial.rss",
-    "https://github.com/Fabricio-Antonio/meus10centavos/tag-curso.rss",
-    "https://github.com/Fabricio-Antonio/meus10centavos/tag-blog.rss",
-    "https://github.com/Fabricio-Antonio/meus10centavos/tag-linux.rss",
-    "https://github.com/Fabricio-Antonio/meus10centavos/tag-marmite.rss",
-    "https://github.com/Fabricio-Antonio/meus10centavos/tag-inicio.rss",
-    "https://github.com/Fabricio-Antonio/meus10centavos/tag-ingles.rss",
-    "https://github.com/Fabricio-Antonio/meus10centavos/tag-pessoal.rss",
-    "https://github.com/Fabricio-Antonio/meus10centavos/tag-rust.rss",
-    "https://github.com/Fabricio-Antonio/meus10centavos/author-fabricio.rss",
-    "https://github.com/Fabricio-Antonio/meus10centavos/archive-2026.rss",
-    "https://github.com/Fabricio-Antonio/meus10centavos/index.json",
-    "https://github.com/Fabricio-Antonio/meus10centavos/tag-tutorial.json",
-    "https://github.com/Fabricio-Antonio/meus10centavos/tag-curso.json",
-    "https://github.com/Fabricio-Antonio/meus10centavos/tag-blog.json",
-    "https://github.com/Fabricio-Antonio/meus10centavos/tag-linux.json",
-    "https://github.com/Fabricio-Antonio/meus10centavos/tag-marmite.json",
-    "https://github.com/Fabricio-Antonio/meus10centavos/tag-inicio.json",
-    "https://github.com/Fabricio-Antonio/meus10centavos/tag-ingles.json",
-    "https://github.com/Fabricio-Antonio/meus10centavos/tag-pessoal.json",
-    "https://github.com/Fabricio-Antonio/meus10centavos/tag-rust.json",
-    "https://github.com/Fabricio-Antonio/meus10centavos/author-fabricio.json",
-    "https://github.com/Fabricio-Antonio/meus10centavos/archive-2026.json"
+    "/index.rss",
+    "/tag-tutorial.rss",
+    "/tag-blog.rss",
+    "/tag-curso.rss",
+    "/tag-linux.rss",
+    "/tag-pessoal.rss",
+    "/tag-ingles.rss",
+    "/tag-rust.rss",
+    "/tag-marmite.rss",
+    "/tag-inicio.rss",
+    "/author-fabricio.rss",
+    "/archive-2026.rss",
+    "/index.json",
+    "/tag-tutorial.json",
+    "/tag-blog.json",
+    "/tag-curso.json",
+    "/tag-linux.json",
+    "/tag-pessoal.json",
+    "/tag-ingles.json",
+    "/tag-rust.json",
+    "/tag-marmite.json",
+    "/tag-inicio.json",
+    "/author-fabricio.json",
+    "/archive-2026.json"
   ],
   "pagination": [
-    "https://github.com/Fabricio-Antonio/meus10centavos/pages-1.html",
-    "https://github.com/Fabricio-Antonio/meus10centavos/tag-tutorial-1.html",
-    "https://github.com/Fabricio-Antonio/meus10centavos/tag-curso-1.html",
-    "https://github.com/Fabricio-Antonio/meus10centavos/tag-blog-1.html",
-    "https://github.com/Fabricio-Antonio/meus10centavos/tag-linux-1.html",
-    "https://github.com/Fabricio-Antonio/meus10centavos/tag-marmite-1.html",
-    "https://github.com/Fabricio-Antonio/meus10centavos/tag-inicio-1.html",
-    "https://github.com/Fabricio-Antonio/meus10centavos/tag-ingles-1.html",
-    "https://github.com/Fabricio-Antonio/meus10centavos/tag-pessoal-1.html",
-    "https://github.com/Fabricio-Antonio/meus10centavos/tag-rust-1.html",
-    "https://github.com/Fabricio-Antonio/meus10centavos/author-fabricio-1.html",
-    "https://github.com/Fabricio-Antonio/meus10centavos/archive-2026-1.html"
+    "/pages-1.html",
+    "/tag-tutorial-1.html",
+    "/tag-blog-1.html",
+    "/tag-curso-1.html",
+    "/tag-linux-1.html",
+    "/tag-pessoal-1.html",
+    "/tag-ingles-1.html",
+    "/tag-rust-1.html",
+    "/tag-marmite-1.html",
+    "/tag-inicio-1.html",
+    "/author-fabricio-1.html",
+    "/archive-2026-1.html"
   ],
   "file_mappings": [],
   "misc": [
-    "https://github.com/Fabricio-Antonio/meus10centavos/index.html"
+    "/index.html"
   ],
   "summary": {
     "posts": 6,
@@ -94,8 +94,8 @@
     "misc": 1,
     "total": 61,
     "meta": {
-      "url": "https://github.com/Fabricio-Antonio/meus10centavos",
-      "absolute_urls": true
+      "url": "",
+      "absolute_urls": false
     }
   }
 }
