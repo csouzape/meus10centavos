@@ -27,6 +27,8 @@ Aqui posso falar sem forçar o exibisionismo técnico que é exigido no GitHub e
 
 - **GitHub:** [github.com/Fabricio-Antonio](https://github.com/Fabricio-Antonio)
 - **LinkedIn:** [linkedin.com/in/fabricio-ss](https://www.linkedin.com/in/fabricio-ss/)
+- **Instagram** [instagram.com/fabriciosantos.dev](https://www.instagram.com/fabriciosantos.dev/)
+- **Discord** [discord.com/users/donald_duck.dev](https://discord.com/users/donald_duck.dev)
 
 ---
 
