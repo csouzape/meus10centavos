@@ -62,7 +62,6 @@ Vantagens:
 <img src="/media/isos.jpg" alt="Múltiplas ISOs no Ventoy" width="700" height="500">
 
 ### Como usar:
-
 - Baixe o Ventoy em [ventoy.net](https://www.ventoy.net/)
 - Instale no pendrive (isso irá formatá-lo)
 - Copie os arquivos ISO das distribuições Linux diretamente para o pendrive
