@@ -1,7 +1,7 @@
 ---
 title: "Tudo sobre maquinas virtuais"
 slug: tudo-sobre-maquinas-virtuais
-date: 2026-02-14
+date: 2026-02-15
 tags: tutorial, linux
 author: carlos
 ---
